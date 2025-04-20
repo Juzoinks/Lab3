@@ -1,31 +1,79 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#e8f4f8"
-    android:gravity="center"
-    android:orientation="vertical">
-    <!-- Create a TextView to show the title. -->
-    <!-- Create an ImageButton for starting the game. -->
+    tools:context=".MainActivity">
+
+    <!-- Main menu layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="269dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/buzzpal" />
+
+        <ImageButton
+            android:layout_width="211dp"
+            android:layout_height="165dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/play"
+            android:onClick="startGame" />
+
+        <ImageButton
+            android:layout_width="124dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/dictionary"
+            android:onClick="dictionary" />
+    </LinearLayout>
+
+    <!-- Half Sun in the Top Left -->
     <ImageView
-        android:layout_width="124dp"
-        android:layout_height="133dp"
-        android:layout_margin="10dp"
-        android:background="@drawable/buzzpal"/>
+        android:layout_width="574dp"
+        android:layout_height="179dp"
+        android:layout_gravity="top|start"
+        android:layout_margin="0dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/sun" />
 
-    <ImageButton
-        android:layout_width="wrap_content"
+    <!-- Flower row at the bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@drawable/play"
-        android:onClick="startGame" />
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:padding="8dp">
 
-    <ImageButton
-        android:layout_width="282dp"
-        android:layout_height="102dp"
-        android:layout_margin="5dp"
-        android:background="@drawable/dictionary"
-        android:onClick="dictionary" />
-</LinearLayout>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/lotsaflower" />
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/pinkflower" />
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/orangeflower" />
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/yellowflower" />
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/purpleflower" />
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/whiteflower" />
+    </LinearLayout>
+</FrameLayout>

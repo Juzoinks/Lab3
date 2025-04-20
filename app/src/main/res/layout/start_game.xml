@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e8f4f8"
+    android:background="@drawable/gradient_background"
     android:gravity="center"
     android:padding="16dp">
     <!-- Create a horizontal LinearLayout to display timer and points related stuff -->
@@ -90,7 +90,7 @@
                 android:onClick="answerSelected"
                 android:textSize="32sp"
                 android:textColor="@android:color/white"
-                android:background="#2196f3"
+                android:background="#A76545"
                 app:backgroundTint="@null"
                 android:layout_margin="2dp" />
             <Button
@@ -100,7 +100,7 @@
                 android:onClick="answerSelected"
                 android:textSize="32sp"
                 android:textColor="@android:color/white"
-                android:background="#2196f3"
+                android:background="#A76545"
                 app:backgroundTint="@null"
                 android:layout_margin="2dp" />
             <Button
@@ -110,7 +110,7 @@
                 android:onClick="answerSelected"
                 android:textSize="32sp"
                 android:textColor="@android:color/white"
-                android:background="#2196f3"
+                android:background="#A76545"
                 app:backgroundTint="@null"
                 android:layout_margin="2dp" />
             <Button
@@ -120,7 +120,7 @@
                 android:onClick="answerSelected"
                 android:textSize="32sp"
                 android:textColor="@android:color/white"
-                android:background="#2196f3"
+                android:background="#A76545"
                 app:backgroundTint="@null"
                 android:layout_margin="2dp" />
             <TextView
@@ -145,7 +145,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
-                android:background="#2196f3"
+                android:background="#A76545"
                 android:onClick="nextQuestion"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
@@ -153,6 +153,40 @@
                 android:textColor="@android:color/white"
                 android:textSize="32sp"
                 app:backgroundTint="@null" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:gravity="center_horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/pixelbee1" />
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/pixelbee2" />
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/pixelbee3" />
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/pixelbee4" />
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/pixelbee1" />
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/pixelbee6" />
+            </LinearLayout>
 
         </LinearLayout>
     </LinearLayout>
