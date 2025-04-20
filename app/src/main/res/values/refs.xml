@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="snake" />
+    <drawable name="apple" />
+    <drawable name="bunny" />
+    <drawable name="bus" />
+    <drawable name="cat" />
+    <drawable name="door" />
+    <drawable name="horse" />
+    <drawable name="pencil" />
+    <drawable name="strawberry" />
+    <drawable name="train" />
+</resources>
